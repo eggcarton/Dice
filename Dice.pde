@@ -1,28 +1,45 @@
 void setup()
 {
-	noLoop();
+  size(500,500);
+  noLoop();
 }
+
 void draw()
 {
-	//your code here
+  background(0);
+  Die test = new Die(width/2, height/2);
+  test.show();
+  test.roll();
 }
+
 void mousePressed()
 {
-	redraw();
+  redraw();
 }
-class Die //models one single dice cube
-{
-	//variable declarations here
-	Die(int x, int y) //constructor
-	{
-		//variable initializations here
-	}
-	void roll()
-	{
-		//your code here
-	}
-	void show()
-	{
-		//your code here
-	}
+
+class Die 
+{  
+  int mySize, myX, myY,dNum;
+  Die(int x, int y)
+  {  
+    mySize = 75;
+    myX = x;
+    myY = y;
+  }
+  void roll()
+  {  
+    noStroke();
+    dNum= (int)(Math.random())+1;
+    System.out.println("dNum:" + dNum);
+    if (dNum == 1)
+   {
+     fill(0);
+     ellipse(myX+35, myY+35, 10,10);
+   }
+  }
+  void show()
+  {   
+   fill(255); 
+   rect(myX, myY, mySize, mySize, 25);
+  }
 }
