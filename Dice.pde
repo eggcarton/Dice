@@ -44,7 +44,6 @@ class Die
   void roll()
   {  
     noStroke(); 
-    System.out.println("dNum:" + dNum); 
     fill(0); 
     if (dNum == 1)
     {
