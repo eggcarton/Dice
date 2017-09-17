@@ -1,4 +1,4 @@
-void setup()
+ void setup()
 {
   size(500, 550);
   rectMode(CENTER);
@@ -48,21 +48,25 @@ class Die
     fill(0); 
     if (dNum == 1)
     {
+      fill(228,3,3);
       ellipse(myX, myY, 10, 10);
     }
     if (dNum == 2)
     {
+      fill(255,140,0);
       ellipse(myX-15, myY-15, 10, 10); 
       ellipse(myX+15, myY+15, 10, 10);
     }
     if (dNum == 3)
     {
+      fill(255,237,0);
       ellipse(myX-15, myY-15, 10, 10); 
       ellipse(myX+15, myY+15, 10, 10); 
       ellipse(myX, myY, 10, 10);
     }
     if (dNum == 4)
     {
+      fill(0,128,38);
       ellipse(myX-15, myY-15, 10, 10); 
       ellipse(myX+15, myY+15, 10, 10); 
       ellipse(myX-15, myY+15, 10, 10); 
@@ -70,6 +74,7 @@ class Die
     }
     if (dNum == 5)
     {
+      fill(0,77,255);
       ellipse(myX-15, myY-15, 10, 10); 
       ellipse(myX+15, myY+15, 10, 10); 
       ellipse(myX, myY, 10, 10); 
@@ -78,6 +83,7 @@ class Die
     }
     if (dNum == 6)
     {
+      fill(177,7,135);
       ellipse(myX-15, myY-15, 10, 10); 
       ellipse(myX+15, myY+15, 10, 10); 
       ellipse(myX-15, myY, 10, 10); 
